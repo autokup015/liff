@@ -60,23 +60,14 @@
       }
   
       function openWindow() {
+        liff.openWindow({
+          url:"https://line.me",
+          external : true          
+        })
       }
   
       async function getFriendship() {
       }
-  
-    //   async function sendMsg() {
-    //   if (liff.getContext().type !== "none") {
-    //     await liff.sendMessages([
-    //       {
-    //         "type": "sticker",
-    //         "stickerId": 1,
-    //         "packageId": 1
-    //       }
-    //     ])
-    //     alert("Message sent")
-    //   }
-    // }
 
     async function sendMsg() {
       if (liff.getContext().type !== "none") {
