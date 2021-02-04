@@ -93,8 +93,10 @@
       document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+
     }
-    
+
       function getEnvironment() {
         document.getElementById("os").append(liff.getOS())
         document.getElementById("language").append(liff.getLanguage())
